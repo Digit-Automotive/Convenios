@@ -147,6 +147,11 @@ img {
     img {
         max-width: 90%; /* Reduce el ancho máximo de las imágenes */
     }
+    footer {
+        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
+        height: 40px; /* Ajusta la altura del footer si es necesario */
+        line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+    }
 }
 
 /* Media Queries para pantallas aún más pequeñas */
@@ -168,7 +173,7 @@ img {
     }
 
     footer {
-        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
+        font-size: 8px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
         height: 40px; /* Ajusta la altura del footer si es necesario */
         line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
     }

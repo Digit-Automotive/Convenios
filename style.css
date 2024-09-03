@@ -1,0 +1,181 @@
+/* Reset general para padding y margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+}
+
+/* Estilos básicos para el body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    font-family: Hack, monospace;
+    background-color: #1c335b;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para los divs */
+div {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para los párrafos */
+p {
+    margin: 16px;
+    font-size: 96px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+
+/* Efecto hover para los párrafos */
+p::before {
+    content: attr(data-item);
+    transition: all 1s ease-in-out;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+/* Efecto hover para los párrafos */
+p:hover::before {
+    width: 100%;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    margin: 25px;
+    background: #1c335b;
+    padding: 16px;
+}
+
+/* Estilos para los elementos del menú */
+.menuItems {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+    justify-content: center; /* Centra los elementos */
+}
+
+/* Estilos para los elementos del menú */
+.menuItems li {
+    margin: 5px; /* Reduce el margen para mejor adaptabilidad */
+}
+
+/* Estilos para los enlaces en el menú */
+.menuItems a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Efecto hover para los enlaces del menú */
+.menuItems a::before {
+    content: attr(data-item);
+    transition: 0.5s;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.menuItems a:hover::before {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos para el footer */
+footer {
+    position: absolute;
+    font-size: 16px;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #1c335b;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid;
+}
+
+footer a:hover {
+    border-bottom: 1px transparent;
+}
+
+/* Asegura que las imágenes se ajusten a la pantalla */
+img {
+    max-width: auto;
+    height: auto;
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    p {
+        font-size: 48px; /* Reduce el tamaño del texto para pantallas pequeñas */
+    }
+
+    .menuItems a {
+        font-size: 18px; /* Ajusta el tamaño del texto en el menú */
+    }
+
+    img {
+        max-width: 90%; /* Reduce el ancho máximo de las imágenes */
+    }
+    footer {
+        font-size: 12px; /* Ajusta el tamaño del texto en el footer para pantallas pequeñas */
+        height: 50px; /* Ajusta la altura del footer si es necesario */
+        line-height: 50px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    p {
+        font-size: 36px; /* Reduce aún más el tamaño del texto */
+    }
+
+    .menuItems {
+        flex-direction: column; /* Coloca los elementos del menú en una columna */
+    }
+
+    .menuItems li {
+        margin: 2px; /* Ajusta el margen para mejor visualización en pantallas pequeñas */
+    }
+
+    img {
+        max-width: 80%; /* Reduce aún más el ancho máximo de las imágenes */
+    }
+
+    footer {
+        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
+        height: 40px; /* Ajusta la altura del footer si es necesario */
+        line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+    }
+}

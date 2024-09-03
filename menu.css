@@ -99,7 +99,7 @@ header {
 }
 
 .menu a:hover {
-  background-color: #003487; /* Cambia el color al pasar el cursor */
+  background-color: #375688; /* Cambia el color al pasar el cursor */
 }
 
 
@@ -316,3 +316,5 @@ footer {
     font-size: 12px; /* Reducir el tamaño de la fuente */
   }
 }
+
+

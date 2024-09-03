@@ -69,8 +69,9 @@ nav {
     justify-content: center; /* Centra los elementos */
 }
 
+/* Estilos para los elementos del menú */
 .menuItems li {
-    margin: 10px; /* Reduce el margen para mejor adaptabilidad */
+    margin: 5px; /* Reduce el margen para mejor adaptabilidad */
 }
 
 /* Estilos para los enlaces en el menú */
@@ -148,9 +149,9 @@ img {
         max-width: 90%; /* Reduce el ancho máximo de las imágenes */
     }
     footer {
-        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
-        height: 40px; /* Ajusta la altura del footer si es necesario */
-        line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+        font-size: 12px; /* Ajusta el tamaño del texto en el footer para pantallas pequeñas */
+        height: 50px; /* Ajusta la altura del footer si es necesario */
+        line-height: 50px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
     }
 }
 
@@ -165,7 +166,7 @@ img {
     }
 
     .menuItems li {
-        margin: 5px; /* Ajusta el margen para mejor visualización en pantallas pequeñas */
+        margin: 2px; /* Ajusta el margen para mejor visualización en pantallas pequeñas */
     }
 
     img {
@@ -173,7 +174,7 @@ img {
     }
 
     footer {
-        font-size: 8px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
+        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
         height: 40px; /* Ajusta la altura del footer si es necesario */
         line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
     }

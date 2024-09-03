@@ -168,7 +168,7 @@ img {
     }
 
     footer {
-        font-size: 12px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
+        font-size: 10px; /* Reduce el tamaño del texto en el footer para pantallas pequeñas */
         height: 40px; /* Ajusta la altura del footer si es necesario */
         line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
     }

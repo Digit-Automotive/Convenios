@@ -136,9 +136,9 @@ img {
 }
 
 /* Media Queries para pantallas pequeñas */
-@media (max-width: 668px) {
+@media (max-width: 768px) {
     p {
-        font-size: 28px; /* Reduce el tamaño del texto para pantallas pequeñas */
+        font-size: 48px; /* Reduce el tamaño del texto para pantallas pequeñas */
     }
 
     .menuItems a {
@@ -146,7 +146,7 @@ img {
     }
 
     img {
-        max-width: 40%; /* Reduce el ancho máximo de las imágenes */
+        max-width: 90%; /* Reduce el ancho máximo de las imágenes */
     }
     footer {
         font-size: 12px; /* Ajusta el tamaño del texto en el footer para pantallas pequeñas */
@@ -156,7 +156,7 @@ img {
 }
 
 /* Media Queries para pantallas aún más pequeñas */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     p {
         font-size: 36px; /* Reduce aún más el tamaño del texto */
     }

@@ -103,7 +103,6 @@ header {
     background-color: #375688; /* Cambia el color al pasar el cursor */
 }
 
-
 /* IMAGENES PC */
 
 /* Contenedor para las imágenes */
@@ -124,9 +123,7 @@ header {
     margin-top: 90px; /* Desplaza las imágenes hacia abajo */
 }
 
-
 /* IMAGENES MOVIL */
-
 
 /* Estilo para el contenedor de imágenes en dispositivos móviles */
 @media (max-width: 768px) {
@@ -143,10 +140,6 @@ header {
         margin-top: 0; /* Elimina el margen superior */
     }
 }
-
-
-
-
 
 /* ESTILO PARA PIE DE PAGINA */
 footer {
@@ -176,6 +169,33 @@ body > footer {
 
     .footer-content p {
         font-size: 12px; /* Reducir el tamaño de la fuente */
+    }
+}
+
+/* Estilo para dispositivos en orientación horizontal */
+@media (orientation: landscape) and (max-width: 768px) {
+    .navbar {
+        padding: 0 20px; /* Ajusta el espaciado a los lados si es necesario */
+    }
+
+    .menu {
+        width: 250px; /* Puedes ajustar el ancho del menú si es necesario */
+        top: 60px; /* Ajusta la posición del menú si es necesario */
+    }
+
+    .img-container {
+        flex-direction: row; /* Mantén la alineación horizontal de las imágenes */
+        gap: 30px; /* Ajusta el espacio entre las imágenes */
+        padding: 15px; /* Ajusta el espacio alrededor del contenedor */
+    }
+
+    .img-item {
+        width: 50%; /* Ajusta el ancho para que las imágenes ocupen el 50% del contenedor */
+        height: auto; /* Mantiene la altura automática */
+    }
+
+    footer {
+        padding: 10px 20px; /* Ajusta el padding si es necesario */
     }
 }
 

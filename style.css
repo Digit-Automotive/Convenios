@@ -179,3 +179,33 @@ img {
         line-height: 40px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
     }
 }
+
+/* Media Queries para dispositivos en orientación horizontal */
+@media (orientation: landscape) and (max-width: 768px) {
+    p {
+        font-size: 72px; /* Ajusta el tamaño del texto en orientación horizontal */
+    }
+
+    .menuItems {
+        flex-direction: row; /* Mantén los elementos del menú en una fila */
+        flex-wrap: nowrap; /* Evita que los elementos se envuelvan en múltiples líneas */
+    }
+
+    .menuItems li {
+        margin: 10px; /* Ajusta el margen para mejor visualización en orientación horizontal */
+    }
+
+    .menuItems a {
+        font-size: 20px; /* Ajusta el tamaño del texto en el menú para orientación horizontal */
+    }
+
+    img {
+        max-width: 85%; /* Ajusta el ancho máximo de las imágenes en orientación horizontal */
+    }
+
+    footer {
+        font-size: 14px; /* Ajusta el tamaño del texto en el footer para orientación horizontal */
+        height: 55px; /* Ajusta la altura del footer si es necesario */
+        line-height: 55px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+    }
+}

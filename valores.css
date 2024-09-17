@@ -1,0 +1,184 @@
+/* Variables de colores y estilos */
+:root {
+    --primColor: #dcdcdc;
+    --secoColor: #555555;
+    --cornerRad: 4px;
+}
+
+/* Estilo del body */
+body {
+    background-color: var(--primColor);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; /* Tamaño de fuente por defecto */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-y: auto; /* Mantiene el scroll vertical */
+}
+
+/* Reset de márgenes y relleno */
+body, margin, padding {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #1c335b; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color del texto */
+    position: relative; /* Necesario para posicionar el menú hamburguesa */
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido (imagen) a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 80px; /* Aumenta la altura de la barra de navegación */
+    padding: 0 30px; /* Aumenta el espaciado a los lados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo de la barra */
+    position: relative; /* Necesario para posicionar el ícono de menú hamburguesa */
+}
+
+/* Ajustes generales para el logo */
+.navbar-logo {
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-height: 60px; /* Define una altura máxima para evitar que crezca demasiado */
+    width: auto; /* Ajusta el ancho automáticamente en función de la altura */
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 40px; /* Ajusta la altura del logo en pantallas pequeñas */
+        width: auto; /* Mantiene la proporción correcta */
+    }
+}
+
+/* Estilo para el icono de menú hamburguesa */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 30px; /* Ajusta el espacio desde el borde derecho */
+}
+
+/* Ocultar el menú por defecto */
+.menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px; /* Ajusta el espacio desde el fondo del encabezado */
+    background-color: #1c335b;
+    width: 200px; /* Ancho del menú */
+}
+
+/* Mostrar el menú cuando se active */
+.menu.active {
+    display: block;
+}
+
+/* Estilo de los enlaces en el menú */
+.menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #fff; /* Añade una línea separadora */
+}
+
+.menu a:hover {
+    background-color: #375688; /* Cambia el color al pasar el cursor */
+}
+
+
+/* IMAGENES PC */
+
+/* Contenedor para las imágenes */
+.img-container {
+    display: flex; /* Utiliza flexbox para alinear las imágenes horizontalmente */
+    justify-content: center; /* Centra las imágenes horizontalmente en el contenedor */
+    gap: 40px; /* Espacio entre las imágenes */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo para cada imagen */
+.img-item {
+    width: 700px; /* Tamaño fijo para el ancho de las imágenes */
+    height: 400px; /* Tamaño fijo para la altura de las imágenes */
+    object-fit: cover; /* Ajusta las imágenes para que cubran el área sin distorsionar */
+    border-radius: var(--cornerRad); /* Aplica el radio de esquina definido en las variables */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera a las imágenes */
+    margin-top: 90px; /* Desplaza las imágenes hacia abajo */
+}
+
+
+/* IMAGENES MOVIL */
+
+
+/* Estilo para el contenedor de imágenes en dispositivos móviles */
+@media (max-width: 768px) {
+    .img-container {
+        flex-direction: column; /* Alinea las imágenes en una columna */
+        gap: 20px; /* Reduce el espacio entre las imágenes */
+        padding: 10px; /* Reduce el espacio alrededor del contenedor */
+    }
+
+    /* Ajustes para cada imagen en dispositivos móviles */
+    .img-item {
+        width: 100%; /* Hace que las imágenes ocupen el ancho completo del contenedor */
+        height: auto; /* Ajusta la altura de las imágenes automáticamente */
+        margin-top: 0; /* Elimina el margen superior */
+    }
+}
+
+
+
+
+
+/* ESTILO PARA PIE DE PAGINA */
+footer {
+    background-color: #1c335b;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+}
+
+/* Asegura que el footer esté al final de la página */
+body > footer {
+    margin-top: auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px; /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Reducir el tamaño de la fuente */
+    }
+}
+
+  
+  
+  

@@ -130,7 +130,7 @@ footer a:hover {
 
 /* Asegura que las imágenes se ajusten a la pantalla */
 img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
     display: block; /* Elimina el espacio en blanco debajo de la imagen */
 }

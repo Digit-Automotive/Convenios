@@ -160,8 +160,17 @@ body {
 }
 
 .img-3 {
-  background-image: url(img/refrescos-coca-cola-normal.jpeg); /* Cambia a la ruta correcta */
+  background-image: url(img/186328919-se-entregan-medallas-a-los-ganadores-de-los-eventos-deportivos.jpg); /* Cambia a la ruta correcta */
 }
+
+.img-4 {
+  background-image: url(img/Idea-de-negocio-300x200.jpg); 
+}
+
+.img-5 {
+  background-image: url(img/filosophi.jpg);
+}
+
 
 .img h1, .img p  {
   margin: 30px 0; /* Ajusta el espaciado alrededor de h1 y p */

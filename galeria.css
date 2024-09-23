@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.main-image {
+  width: 80%; /* Ajusta el tamaño según tus necesidades */
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px; /* Espacio debajo de la imagen principal */
+  border: 2px solid #ddd;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 30px; /* Ajusta el tamaño de las miniaturas */
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.thumbnail:hover {
+  border: 2px solid #007BFF; /* Color al pasar el mouse */
+}
+
+/* Ocultar flechas en pantallas grandes */
+.arrow {
+  display: none; /* Oculta las flechas por defecto */
+}
+
+/* Media Queries para móviles */
+@media (max-width: 600px) {
+  .main-image {
+      width: 90%; /* Ajusta el tamaño para móviles */
+      margin-bottom: 1px; /* Aumenta el espacio debajo de la imagen principal */
+      margin-top: 20px; /* Ajusta el valor según sea necesario */
+  }
+
+  .thumbnail-container {
+      display: none; /* Oculta las miniaturas en móviles */
+  }
+
+  .arrow {
+      display: inline-block; /* Muestra las flechas en móviles */
+      cursor: pointer;
+      font-size: 24px;
+      margin: 10px;
+  }
+
+  /* Añade margen adicional a la galería */
+  .gallery {
+      margin-top: 60px; /* Ajusta el valor según sea necesario */
+  }
+}

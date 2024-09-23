@@ -1,0 +1,94 @@
+<!-- HTML PARA MENU (NO MODIFICAR)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Automotive</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="navbar">
+            <img src="img/DIGIT带商标源文件白色.png" alt="Logo" class="navbar-logo">
+            <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+                &#9776; 
+            </div>
+        </div>
+<!-- .... -->
+        
+        <!-- MENÚ -->
+        <!-- AQUI SE AÑADIRAN MAS APARTADOS PARA EL MENÚ -->
+        <!-- ESTE ES EL CODIGO PARA AÑADIR UN NUEVO APARTADO -->
+
+        <!--  
+         <a herf="AQUI VA LA RUTA HTML">AQUI VA EL NOMBRE A LA CUAL PERTENCE</a>
+        -->
+
+        <!-- COPIA EL ANTERIOR CODIGO Y PEGA DESPUES DE CADA <a...>...</a>  -->
+
+        <nav class="menu">
+            <a href="index.html">Regresar</a>
+            <!-- A PARTIR DE AQUI AÑADIR MAS APARTADOS PARA EL MENU -->
+
+        </nav>
+
+
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="img_c/1.jpg" class="main-image" id="mainImage" alt="Imagen principal">
+            <span class="arrow" onclick="changeImage(-1)">&#10094;</span> <!-- Flecha izquierda -->
+            <span class="arrow" onclick="changeImage(1)">&#10095;</span> <!-- Flecha derecha -->
+            <div class="thumbnail-container">
+                <img src="img_c/1.jpg" class="thumbnail" onclick="setImage('img_c/1.jpg')">
+                <img src="img_c/2.jpg" class="thumbnail" onclick="setImage('img_c/2.jpg')">
+                <img src="img_c/3.jpg" class="thumbnail" onclick="setImage('img_c/3.jpg')">
+                <!-- Agrega más miniaturas según sea necesario -->
+            </div>
+        </div>
+    </div>
+
+
+<!-- PIE DE PAGINA DEL MENU (NO MODIFICAR)-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Digit Automotive. Todos los derechos reservados.</p>
+            <p>Avenida Múnich 665 L-2420, Parque Industrial Logistik II, 79526 S.L.P.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let currentImageIndex = 0;
+        const images = ['img_c/1.jpg', 'img_c/2.jpg', 'img_c/3.jpg']; // Asegúrate de que estas imágenes existen en la misma carpeta
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1; // Vuelve a la última imagen
+            } else if (currentImageIndex >= images.length) {
+                currentImageIndex = 0; // Vuelve a la primera imagen
+            }
+            setMainImage();
+        }
+
+        function setImage(image) {
+            currentImageIndex = images.indexOf(image);
+            setMainImage();
+        }
+
+        function setMainImage() {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = images[currentImageIndex];
+        }
+    </script>
+    
+</body>
+</html>
+<!-- .... -->

@@ -46,7 +46,7 @@
 @media (max-width: 600px) {
   .main-image {
       width: 90%; /* Ajusta el tamaño para móviles */
-      margin-bottom: 1px; /* Aumenta el espacio debajo de la imagen principal */
+      margin-bottom: 10px; /* Aumenta el espacio debajo de la imagen principal */
       margin-top: 20px; /* Ajusta el valor según sea necesario */
   }
 

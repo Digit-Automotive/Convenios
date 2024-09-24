@@ -1,0 +1,48 @@
+table {
+  width: 80%;
+  margin: 3% auto;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+.center {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  table {
+      width: 100%;
+      display: block;
+      border: none; /* Eliminar el borde alrededor de la tabla */
+      overflow: hidden; /* Evita que se desborde */
+  }
+  thead {
+      display: none; /* Oculta los encabezados en la vista móvil */
+  }
+  tr {
+      display: block; /* Cada fila como bloque */
+      margin-bottom: 10px; /* Espaciado entre filas */
+      background-color: #fff; /* Fondo blanco para las filas */
+      border: 1px solid #ddd; /* Borde alrededor de cada fila */
+      border-radius: 5px; /* Esquinas redondeadas */
+      overflow: hidden; /* Evita el desbordamiento */
+  }
+  td {
+      display: flex; /* Flex para alinear el contenido */
+      justify-content: space-between; /* Espacio entre etiquetas y valores */
+      padding: 12px 5px;
+      border: none; /* Sin bordes en las celdas móviles */
+  }
+  td::before {
+      content: attr(data-label); /* Usa el atributo data-label para mostrar la etiqueta */
+      flex-basis: 40%; /* Espacio para la etiqueta */
+      font-weight: bold; /* Resaltar etiquetas */
+      color: #555; /* Color de texto más oscuro */
+  }
+}

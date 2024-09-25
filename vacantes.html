@@ -1,16 +1,22 @@
-<!-- HTML PARA MENU (NO MODIFICAR)-->
+<!-- ESTE ES EL CODIGO PARA LA PAGINA DE CONVENIOS -->
+<!-- FAVOR DE NO MODIFICAR EL CODIGO QUE SE ENCUENTRE DENTRO DE LOS COMENTARIOS EN ROJO--> 
+
+
+
+<!-- ! CODIGO FUENTE DEL MENÚ DE LA PAGINA -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digit Automotive</title>
+    <title>Digit Automotive</title> <!-- ! TITULO DE LA PAGINA -->
     <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="galeria.css">
 </head>
 <body>
+<!-- ! ____________________________________ -->
 
 
+    <!-- ! CODIGO FUENTE DEL MENÚ ESTILO HAMBUERGESA -->
     <header>
         <div class="navbar">
             <img src="img/DIGIT带商标源文件白色.png" alt="Logo" class="navbar-logo">
@@ -18,86 +24,153 @@
                 &#9776; 
             </div>
         </div>
-<!-- .... -->
+    <!-- ! _________________________________________ -->
+
         
-        <!-- MENÚ -->
-        <!-- AQUI SE AÑADIRAN MAS APARTADOS PARA EL MENÚ -->
-        <!-- ESTE ES EL CODIGO PARA AÑADIR UN NUEVO APARTADO -->
-
-        <!--  
+        <!-- 
+        MENÚ DE LA PAGINA
+        AQUI SE AÑADIRAN MAS APARTADOS PARA EL MENÚ
+        ESTE ES EL CODIGO PARA AÑADIR UN NUEVO APARTADO
+        
          <a herf="AQUI VA LA RUTA HTML">AQUI VA EL NOMBRE A LA CUAL PERTENCE</a>
-        -->
 
-        <!-- COPIA EL ANTERIOR CODIGO Y PEGA DESPUES DE CADA <a...>...</a>  -->
+         COPIA EL ANTERIOR CODIGO Y PEGA DENTRO DEL AREA VERDE 
+         -->
 
+
+
+        <!-- ! _______ -->
         <nav class="menu">
+        <!-- ! _______ -->
+
+
+
+            <!--! _______________________ -->
             <a href="index.html">Regresar</a>
-            <!-- A PARTIR DE AQUI AÑADIR MAS APARTADOS PARA EL MENU -->
+            <!-- ! _______________________ -->
 
+            <!-- __________________________________________________ -->
+            <!-- 
+            APARTIR DE AQUI SE PEGARA Y MODIFICARA LA ESTRUCTURA DE CODIGO
+            ANTERIORMENTE MENCIONADA, NO SALIR DEL AREA VERDE. 
+            -->
+
+
+
+
+
+
+            <!-- __________________________________________________ -->
+            
+
+        <!-- ! _______ -->
         </nav>
+        <!-- ! _______ -->
 
 
-    </header>
+<!-- ! __ -->
+</header>
+<!-- ! __ -->
 
+    <!--
+    PARA AÑADIR MAS IMAGENES COPIA Y PEGA EL SIGUIENTE FORMATO:
+
+    <img src="AQUI VA LA RUTA DE LA NUEVA IMAGEN" class="thumbnail" onclick="setImage('AQUI VA LA RUTA DE LA NUEVA IMAGEN')">
+
+
+    -->
+
+
+    <!-- ! __________________________________________________________________________________________________________________________________________________________ -->
     <div class="container">
         <div class="gallery">
-            <img src="img_c/1.jpg" class="main-image" id="mainImage" alt="Imagen principal">
-            <span class="arrow" onclick="changeImage(-1)">&#10094;</span> <!-- Flecha izquierda -->
-            <span class="arrow" onclick="changeImage(1)">&#10095;</span> <!-- Flecha derecha -->
+            <img src="img_c/1.jpg" class="main-image" id="mainImage" alt="Imagen principal"> <!-- Imagen principal de la galería -->
+            <span class="arrow" onclick="changeImage(-1)">&#10094;</span> <!-- Flecha izquierda para cambiar a la imagen anterior -->
+            <span class="arrow" onclick="changeImage(1)">&#10095;</span> <!-- Flecha derecha para cambiar a la imagen siguiente -->
             <div class="thumbnail-container">
-                <img src="img_c/1.jpg" class="thumbnail" onclick="setImage('img_c/1.jpg')">
+                <img src="img_c/1.jpg" class="thumbnail" onclick="setImage('img_c/1.jpg')"> <!-- Miniatura que al hacer clic establece la imagen principal -->
                 <img src="img_c/2.jpg" class="thumbnail" onclick="setImage('img_c/2.jpg')">
                 <img src="img_c/3.jpg" class="thumbnail" onclick="setImage('img_c/3.jpg')">
+    <!-- ! __________________________________________________________________________________________________________________________________________________________ -->
+                
+                <!--___________________________________________-->
                 <!-- Agrega más miniaturas según sea necesario -->
-            </div>
-        </div>
-    </div>
 
+
+
+
+
+
+
+
+                <!-- _________________________________________ -->
+
+
+            <!-- ! _ -->
+            </div>
+            <!-- ! _ -->
+
+
+        <!-- ! _ -->
+        </div>
+        <!-- ! _ -->
+
+
+    <!-- ! _ -->
+    </div>
+    <!-- ! _ -->
+
+
+    <!-- ! ____________________________________ -->
     <div style="text-align: center; margin: 20px;">
         <a href="mailto:hr08.mx@digitautomotive.com" style="display: inline-block; padding: 8px 16px; background-color: #007BFF; color: white; text-align: center; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">
-            Envia tu CV.
+            Envia tu CV. <!--! Enlace para enviar un correo electrónico con el CV -->
         </a>
     </div>
+    <!-- ! ____________________________________ -->
 
 
-<!-- PIE DE PAGINA DEL MENU (NO MODIFICAR)-->
+
+    <!-- ! PIE DE PAGINA DEL MENU (NO MODIFICAR) -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Digit Automotive. Todos los derechos reservados.</p>
-            <p>Avenida Múnich 665 L-2420, Parque Industrial Logistik II, 79526 S.L.P.</p>
+            <p>&copy; 2024 Digit Automotive. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
+            <p>Avenida Múnich 665 L-2420, Parque Industrial Logistik II, 79526 S.L.P.</p> <!-- Dirección de la empresa -->
         </div>
     </footer>
+    <!-- ! ____________________________________ -->
 
-
-
+    <!-- ! ____________________________________ -->
     <script>
-        let currentImageIndex = 0;
-        const images = ['img_c/1.jpg', 'img_c/2.jpg', 'img_c/3.jpg']; // Asegúrate de que estas imágenes existen en la misma carpeta
+
+        let currentImageIndex = 0; 
+        const images = ['img_c/1.jpg', 'img_c/2.jpg', 'img_c/3.jpg']; // Lista de imágenes en la galería (Agrega despues de la ultima ruta, la nueva ruta.)
 
         function changeImage(direction) {
-            currentImageIndex += direction;
+            currentImageIndex += direction; // Cambia el índice según la dirección (NO MODIFICAR)
             if (currentImageIndex < 0) {
-                currentImageIndex = images.length - 1; // Vuelve a la última imagen
+                currentImageIndex = images.length - 1; // Vuelve a la última imagen si se excede (NO MODIFICAR)
             } else if (currentImageIndex >= images.length) {
-                currentImageIndex = 0; // Vuelve a la primera imagen
+                currentImageIndex = 0; // Vuelve a la primera imagen si se supera (NO MODIFICAR)
             }
-            setMainImage();
+            setMainImage(); // Actualiza la imagen principal (NO MODIFICAR)
         }
 
         function setImage(image) {
-            currentImageIndex = images.indexOf(image);
-            setMainImage();
+            currentImageIndex = images.indexOf(image); // Establece el índice de la imagen seleccionada (NO MODIFICAR)
+            setMainImage(); // Actualiza la imagen principal (NO MODIFICAR)
         }
 
         function setMainImage() {
-            const mainImage = document.getElementById('mainImage');
-            mainImage.src = images[currentImageIndex];
+            const mainImage = document.getElementById('mainImage'); // Selecciona la imagen principal (NO MODIFICAR)
+            mainImage.src = images[currentImageIndex]; // Cambia la fuente de la imagen principal (NO MODIFICAR)
         }
+
     </script>
-    
-    
+    <!-- ! ____________________________________ -->
 
 
+<!-- ! __ -->
 </body>
 </html>
-<!-- .... -->
+<!-- ! __ -->

@@ -189,6 +189,11 @@ body {
 }
 
 
+.img-9 {
+  background-image: url(img/aabb85182a2ec900735a98b050fcc0e2.jpg);
+
+}
+
 .img h1, .img p  {
   margin: 30px 0; /* Ajusta el espaciado alrededor de h1 y p */
 }

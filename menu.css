@@ -1,59 +1,60 @@
 /* Variables de colores y estilos */
 :root {
-  --primColor: #dcdcdc;
-  --secoColor: #555555;
-  --cornerRad: 4px;
+  --primColor: #dcdcdc; /* Color principal del fondo */
+  --secoColor: #555555; /* Color secundario para el texto */
+  --cornerRad: 4px; /* Radio de las esquinas */
 }
 
 /* Estilo del body */
 body {
-  background-color: var(--primColor);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primColor); /* Establece el color de fondo del body */
+  font-family: Arial, Helvetica, sans-serif; /* Tipo de fuente para el texto */
   font-size: 20px; /* Tamaño de fuente por defecto */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-size: cover; /* El fondo cubre todo el área */
+  background-position: center; /* Centra el fondo */
+  height: 100vh; /* Altura del viewport */
   overflow: visible; /* Evita el scroll si el fondo es más grande que la ventana */
 }
 
 /* Reset de márgenes y relleno */
 body, margin, padding {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Elimina márgenes del body */
+  padding: 0; /* Elimina relleno del body */
 }
 html, body {
-  height: 100%;
-  margin: 0;
+  height: 100%; /* Altura del html y body al 100% */
+  margin: 0; /* Elimina márgenes por defecto */
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Utiliza Flexbox para el diseño */
+  flex-direction: column; /* Coloca los elementos en columna */
 }
+
 /* Estilo del encabezado */
 header {
   background-color: #1c335b; /* Color de fondo de la barra de navegación */
   color: #fff; /* Color del texto */
-  position: relative; /* Necesario para posicionar el menú hamburguesa */
+  position: relative; /* Permite posicionar el menú hamburguesa */
 }
 
 /* Estilo de la barra de navegación */
 .navbar {
-  display: flex;
-  justify-content: flex-start; /* Alinea el contenido (imagen) a la izquierda */
-  align-items: center; /* Centra el contenido verticalmente */
-  height: 80px; /* Aumenta la altura de la barra de navegación */
-  padding: 0 30px; /* Aumenta el espaciado a los lados */
+  display: flex; /* Utiliza Flexbox */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  align-items: center; /* Centra verticalmente */
+  height: 80px; /* Altura de la barra de navegación */
+  padding: 0 30px; /* Espaciado lateral */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo de la barra */
-  position: relative; /* Necesario para posicionar el ícono de menú hamburguesa */
+  position: relative; /* Para posicionar el menú hamburguesa */
 }
 
 /* Ajustes generales para el logo */
 .navbar-logo {
-  height: auto; /* Mantiene la proporción original de la imagen */
-  max-height: 60px; /* Define una altura máxima para evitar que crezca demasiado */
-  width: auto; /* Ajusta el ancho automáticamente en función de la altura */
+  height: auto; /* Mantiene proporciones originales */
+  max-height: 60px; /* Altura máxima del logo */
+  width: auto; /* Ajusta el ancho automáticamente */
 }
 
 /* Responsividad para pantallas más pequeñas */
@@ -64,177 +65,166 @@ header {
   }
 }
 
-
 /* Estilo para el icono de menú hamburguesa */
 .menu-toggle {
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  right: 30px; /* Ajusta el espacio desde el borde derecho */
+  font-size: 24px; /* Tamaño del icono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  color: white; /* Color del icono */
+  position: absolute; /* Posiciona el icono en relación a la barra */
+  right: 30px; /* Espacio desde el borde derecho */
 }
 
 /* Ocultar el menú por defecto */
 .menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 80px; /* Ajusta el espacio desde el fondo del encabezado */
-  background-color: #1c335b;
+  display: none; /* Inicialmente oculto */
+  position: absolute; /* Posiciona el menú debajo de la barra */
+  right: 0; /* Se alinea a la derecha */
+  top: 80px; /* Espacio desde el fondo del encabezado */
+  background-color: #1c335b; /* Color de fondo del menú */
   width: 200px; /* Ancho del menú */
 }
 
-/* Mostrar el menú cuando se active */
+/* Mostrar el menú cuando se activa */
 .menu.active {
-  display: block;
+  display: block; /* Muestra el menú cuando se activa */
 }
 
 /* Estilo de los enlaces en el menú */
 .menu a {
-  display: block;
-  color: white;
-  padding: 15px;
-  text-decoration: none;
-  border-bottom: 1px solid #fff; /* Añade una línea separadora */
+  display: block; /* Cada enlace ocupa todo el ancho */
+  color: white; /* Color del texto del enlace */
+  padding: 15px; /* Espaciado interno */
+  text-decoration: none; /* Elimina subrayado */
+  border-bottom: 1px solid #fff; /* Línea separadora entre enlaces */
 }
 
 .menu a:hover {
   background-color: #375688; /* Cambia el color al pasar el cursor */
 }
 
-
-
 /* Estilo para imágenes en contenedores */
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  padding: 0; /* Elimina padding global */
+  margin: 0; /* Elimina márgenes globales */
 }
 
 body {
-  background: #dcdcdc;
+  background: #dcdcdc; /* Color de fondo del body */
 }
 
 .container {
-  display: flex;
+  display: flex; /* Utiliza Flexbox para el diseño */
   justify-content: center; /* Centra el contenido horizontalmente */
-  flex-wrap: wrap;
-  margin-top:auto; /* Ajusta el margen superior para bajar el contenido */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  margin-top:auto; /* Espacio superior para bajar el contenido */
 }
 
 .img {
-  background: white;
-  width: 300px; /* Aumenta el ancho de la tarjeta */
-  height: 500px; /* Aumenta la altura de la tarjeta */
-  margin: 15px; /* Aumenta el margen alrededor de la tarjeta */
-  border-radius: 15px;
-  text-align: center; /* Centra el texto dentro del img */
+  background: white; /* Fondo blanco para cada tarjeta */
+  width: 300px; /* Ancho de la tarjeta */
+  height: 500px; /* Altura de la tarjeta */
+  margin: 15px; /* Margen alrededor de la tarjeta */
+  border-radius: 15px; /* Esquinas redondeadas */
+  text-align: center; /* Centra el texto dentro de la tarjeta */
 }
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 600px) {
   .img {
     width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin: 10px auto; /* Reduce el margen y centra la tarjeta horizontalmente */
+    height: auto; /* Altura automática */
+    margin: 10px auto; /* Reduce el margen y centra la tarjeta */
   }
 
   .container {
-    padding: 5px; /* Reduce el padding alrededor del contenedor a un valor pequeño */
-    margin: 0; /* Elimina el margen del contenedor si es necesario */
+    padding: 5px; /* Espaciado pequeño alrededor del contenedor */
+    margin: 0; /* Elimina margen del contenedor */
   }
 }
+
 .img-imagen {
-  height: 200px; /* Aumenta la altura de la imagen */
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
+  height: 200px; /* Altura de la imagen dentro de la tarjeta */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+  background-size: cover; /* Cubre el área del contenedor */
+  border-radius: 15px 15px 0 0; /* Esquinas redondeadas superiores */
 }
 
+/* Clases para las imágenes de las tarjetas */
 .img-1 {
-  background-image: url(img/Image_20240828142153.jpg);
+  background-image: url(img/Image_20240828142153.jpg); /* URL de la imagen */
 }
 
 .img-2 {
-  background-image: url(img/f768x1-573243_573370_79.webp); /* Cambia a la ruta correcta */
+  background-image: url(img/f768x1-573243_573370_79.webp); /* URL de la imagen */
 }
 
 .img-3 {
-  background-image: url(img/186328919-se-entregan-medallas-a-los-ganadores-de-los-eventos-deportivos.jpg); /* Cambia a la ruta correcta */
+  background-image: url(img/186328919-se-entregan-medallas-a-los-ganadores-de-los-eventos-deportivos.jpg); /* URL de la imagen */
 }
 
 .img-4 {
-  background-image: url(img/Idea-de-negocio-300x200.jpg); 
+  background-image: url(img/Idea-de-negocio-300x200.jpg); /* URL de la imagen */
 }
 
 .img-5 {
-  background-image: url(img/filosophi.jpg);
-
+  background-image: url(img/filosophi.jpg); /* URL de la imagen */
 }
 
 .img-6 {
-  background-image: url(img/u3M4PQCc_400x400.jpg);
-
+  background-image: url(img/u3M4PQCc_400x400.jpg); /* URL de la imagen */
 }
 
-
 .img-7 {
-  background-image: url(img/1630575052657.jpg);
-
+  background-image: url(img/1630575052657.jpg); /* URL de la imagen */
 }
 
 .img-8 {
-  background-image: url(img/mejores-universidades-de-Mexico.jpg);
-
+  background-image: url(img/mejores-universidades-de-Mexico.jpg); /* URL de la imagen */
 }
-
 
 .img-9 {
-  background-image: url(img/aabb85182a2ec900735a98b050fcc0e2.jpg);
-
+  background-image: url(img/aabb85182a2ec900735a98b050fcc0e2.jpg); /* URL de la imagen */
 }
 
+/* Espaciado para encabezados y párrafos dentro de las tarjetas */
 .img h1, .img p  {
-  margin: 30px 0; /* Ajusta el espaciado alrededor de h1 y p */
+  margin: 30px 0; /* Espaciado alrededor de h1 y p */
 }
-
 
 .img p {
-  margin: 20px 0; /* Ajusta el espaciado arriba y abajo del párrafo */
-  padding: 0 20px; /* Añade espacio a los lados del párrafo */
-  text-align: center; /* Justifica el texto dentro de los párrafos */
-  font-size: 16px; /* Reduce el tamaño de la fuente */
+  margin: 20px 0; /* Espaciado arriba y abajo del párrafo */
+  padding: 0 20px; /* Espacio lateral para el párrafo */
+  text-align: center; /* Justifica el texto */
+  font-size: 16px; /* Tamaño de fuente reducido */
 }
 
 .img a {
-  background-color: #1c335b;
-  color: white;
-  padding: 12px 20px; /* Aumenta el tamaño del padding para un botón más grande */
-  display: inline-block; /* Cambiado a inline-block para ajustar el ancho según el contenido */
-  text-align: center;
-  margin: 20px 0; /* Aumenta el margen para centrar el botón horizontalmente */
-  text-decoration: none;
-  border-radius: 5px; /* Opcional: redondea las esquinas del botón */
-  font-size: 16px; /* Aumenta el tamaño de la fuente para hacer el texto más grande */
-  width: auto; /* Permite que el botón ajuste su ancho al contenido */
+  background-color: #1c335b; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 12px 20px; /* Espaciado interno del botón */
+  display: inline-block; /* Botón se ajusta al contenido */
+  text-align: center; /* Centra el texto dentro del botón */
+  margin: 20px 0; /* Margen para centrar el botón */
+  text-decoration: none; /* Elimina subrayado del enlace */
+  border-radius: 5px; /* Esquinas redondeadas del botón */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  width: auto; /* Ajusta el ancho al contenido */
 }
 
 .img:hover {
   background-color: #003487; /* Cambia el color al pasar el cursor */
-  color: white;
-  cursor: pointer;
+  color: white; /* Mantiene el texto blanco */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
   transform: scale(1.05); /* Aumenta la escala del hover */
   transition: all 0.3s ease; /* Suaviza la transición */
 }
 
-
-
-/*ESTILO ARTICULOS */
-
+/* ESTILO ARTÍCULOS */
 article.convenio {
-  padding: 10px;
-  margin: 5px 10px; /* Añade margen en los lados */
-  border-radius: 10px;
+  padding: 10px; /* Espaciado interno del artículo */
+  margin: 5px 10px; /* Margen en los lados */
+  border-radius: 10px; /* Esquinas redondeadas */
   background-color: #f7f7f7; /* Fondo suave para el artículo */
 }
 
@@ -242,42 +232,43 @@ article.convenio {
 @media (max-width: 768px) {
   .main-content {
     max-width: 100%; /* Ocupa el ancho completo */
-    margin: 10px auto;
-    padding: 20px;
+    margin: 10px auto; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
     min-height: auto; /* Altura mínima ajustada */
   }
 }
+
 /* Contenedor para centrar la imagen */
 .img-contenido {
-  text-align: center;
+  text-align: center; /* Centra el contenido */
 }
 
 /* Imagen ajustada */
 .img-contenido img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  width: 100%; /* Ancho completo del contenedor */
+  max-width: 600px; /* Ancho máximo */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
 }
 
 .txt-contenido {
-  margin-top: 20px;
+  margin-top: 20px; /* Espacio superior */
 }
 
 /* Estilo para el botón */
 .botton-map {
   display: block; /* Cambia a block para que se pueda centrar */
-  padding: 10px 20px;
-  background-color: #1c335b; 
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #1c335b; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Elimina subrayado */
+  font-weight: bold; /* Negrita para el texto */
   border-radius: 25px; /* Botón redondeado */
-  box-shadow: 0 4px 8px rgba(26, 19, 72, 0.2);
+  box-shadow: 0 4px 8px rgba(26, 19, 72, 0.2); /* Sombra del botón */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-  text-align: center;
-  width: fit-content; /* Tamaño ajustado al contenido */
-  margin: 20px auto; /* Centrando el botón horizontalmente */
+  text-align: center; /* Centra el texto del botón */
+  width: fit-content; /* Ajusta el tamaño al contenido */
+  margin: 20px auto; /* Centra el botón horizontalmente */
 }
 
 .botton-map:hover {
@@ -287,64 +278,52 @@ article.convenio {
 
 /* Responsividad para el mapa */
 .maps {
-  width: 50%;
-  height: 300px;
-  border: 0;
-  border-radius: 10px; /* Añade bordes redondeados */
+  width: 50%; /* Ancho del mapa */
+  height: 300px; /* Altura del mapa */
+  border: 0; /* Sin borde */
+  border-radius: 10px; /* Esquinas redondeadas */
 }
 
 /* Ajustes de responsividad para móviles */
 @media (max-width: 768px) {
   .maps {
-    width: 320px;
+    width: 320px; /* Ajusta el ancho para móviles */
     height: 250px; /* Ajusta la altura del mapa para móviles */
   }
 
   .botton-map {
     padding: 8px 15px; /* Botón más pequeño en pantallas pequeñas */
-    font-size: 1rem;
+    font-size: 1rem; /* Tamaño de fuente ajustado */
   }
 
   .txt-contenido {
-    margin: 10px;
+    margin: 10px; /* Espacio ajustado */
   }
 }
 
-
-/* ESTILO PARA PIE DE PAGINA*/
-
+/* ESTILO PARA PIE DE PÁGINA */
 footer {
-  background-color: #1c335b;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  width: 100%;
-  margin-top: auto; /* Esto empuja el footer hacia abajo */
+  background-color: #1c335b; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Centra el texto */
+  padding: 15px; /* Espaciado interno */
+  width: 100%; /* Ancho completo */
+  margin-top: auto; /* Empuja el footer hacia abajo */
 }
 
 .footer-content p {
-  margin: 0;
-  font-size: 14px;
+  margin: 0; /* Elimina margen */
+  font-size: 14px; /* Tamaño de fuente */
 }
 
 /* Estilos específicos para pantallas pequeñas */
 @media (max-width: 768px) {
   footer {
-    padding: 10px; /* Reducir el padding en pantallas más pequeñas */
+    padding: 10px; /* Reduce el padding en pantallas más pequeñas */
   }
 
   .footer-content p {
-    font-size: 12px; /* Reducir el tamaño de la fuente */
-  }
-}
-/* Estilos específicos para pantallas pequeñas */
-@media (max-width: 768px) {
-  footer {
-    padding: 10px; /* Reducir el padding en pantallas más pequeñas */
-  }
-
-  .footer-content p {
-    font-size: 12px; /* Reducir el tamaño de la fuente */
+    font-size: 12px; /* Reduce el tamaño de la fuente */
   }
 }
 

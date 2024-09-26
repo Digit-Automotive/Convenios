@@ -1,72 +1,79 @@
+/* Estilo general para el contenedor principal */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
+  display: flex; /* Utiliza flexbox para organizar los elementos internos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  flex-direction: column; /* Organiza los elementos en columna */
+  padding: 20px; /* Espaciado interno del contenedor */
 }
 
+/* Estilo para la galería */
 .gallery {
-  text-align: center;
+  text-align: center; /* Centra el texto dentro de la galería */
 }
 
+/* Estilo para la imagen principal */
 .main-image {
-  width: 80%; /* Ajusta el tamaño según tus necesidades */
-  max-width: 600px;
-  height: auto;
+  width: 80%; /* Ajusta el tamaño a un 80% del contenedor */
+  max-width: 600px; /* Tamaño máximo de la imagen principal */
+  height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 20px; /* Espacio debajo de la imagen principal */
-  border: 2px solid #ddd;
+  border: 2px solid #ddd; /* Borde gris claro alrededor de la imagen */
 }
 
+/* Contenedor para las miniaturas */
 .thumbnail-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: flex; /* Utiliza flexbox para alinear las miniaturas */
+  justify-content: center; /* Centra las miniaturas horizontalmente */
+  flex-wrap: wrap; /* Permite que las miniaturas se envuelvan en múltiples líneas */
 }
 
+/* Estilo para las miniaturas */
 .thumbnail {
-  width: 30px; /* Ajusta el tamaño de las miniaturas */
-  height: auto;
-  margin: 0 10px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: border 0.3s;
+  width: 30px; /* Ancho fijo para las miniaturas */
+  height: auto; /* Mantiene la proporción de las miniaturas */
+  margin: 0 10px; /* Espaciado lateral entre miniaturas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre las miniaturas */
+  border: 2px solid transparent; /* Borde transparente por defecto */
+  transition: border 0.3s; /* Efecto de transición suave para el borde */
 }
 
+/* Efecto al pasar el mouse sobre las miniaturas */
 .thumbnail:hover {
-  border: 2px solid #007BFF; /* Color al pasar el mouse */
+  border: 2px solid #007BFF; /* Cambia el borde a azul al pasar el mouse */
 }
 
-/* Ocultar flechas en pantallas grandes */
+/* Estilo para las flechas de navegación */
 .arrow {
-  display: none; /* Oculta las flechas por defecto */
+  display: none; /* Oculta las flechas por defecto en pantallas grandes */
 }
 
-/* Media Queries para móviles */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
   .main-image {
-    width: 90%; /* Ajusta el tamaño para móviles */
-    margin-bottom: 10px; /* Aumenta el espacio debajo de la imagen principal */
-    margin-top: 20px; /* Ajusta el valor según sea necesario */
+    width: 90%; /* Ajusta el tamaño de la imagen principal para móviles */
+    margin-bottom: 10px; /* Espacio reducido debajo de la imagen principal */
+    margin-top: 20px; /* Espacio encima de la imagen principal */
   }
 
   .thumbnail-container {
-    display: none; /* Oculta las miniaturas en móviles */
+    display: none; /* Oculta las miniaturas en pantallas móviles */
   }
 
   .arrow {
     display: inline-block; /* Muestra las flechas en móviles */
-    cursor: pointer;
-    font-size: 24px;
-    margin: 10px;
-    padding: 5px; /* Agrega un poco de padding */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para mejor visibilidad */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las flechas */
+    font-size: 24px; /* Tamaño del texto para las flechas */
+    margin: 10px; /* Espaciado alrededor de las flechas */
+    padding: 5px; /* Espaciado interno de las flechas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mayor visibilidad */
+    border-radius: 5px; /* Bordes redondeados para un mejor diseño */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para las flechas */
   }
 
-  /* Añade margen adicional a la galería */
+  /* Añade margen superior adicional a la galería en móviles */
   .gallery {
-    margin-top: 60px; /* Ajusta el valor según sea necesario */
+    margin-top: 60px; /* Espacio adicional arriba de la galería */
   }
 }
+

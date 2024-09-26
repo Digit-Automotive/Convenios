@@ -1,106 +1,106 @@
 /* Variables de colores y estilos */
 :root {
-    --primColor: #dcdcdc;
-    --secoColor: #555555;
-    --cornerRad: 4px;
+    --primColor: #dcdcdc; /* Color de fondo principal */
+    --secoColor: #555555; /* Color secundario (no utilizado directamente en este código) */
+    --cornerRad: 4px; /* Radio de esquinas para bordes redondeados */
 }
 
 /* Estilo del body */
 body {
-    background-color: var(--primColor);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primColor); /* Aplica el color de fondo principal */
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente del documento */
     font-size: 20px; /* Tamaño de fuente por defecto */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-size: cover; /* Hace que el fondo cubra todo el viewport */
+    background-position: center; /* Centra el fondo */
+    height: 100vh; /* Establece la altura al 100% de la ventana */
     overflow-x: hidden; /* Evita el scroll horizontal */
-    overflow-y: auto; /* Mantiene el scroll vertical */
+    overflow-y: auto; /* Permite el scroll vertical */
 }
 
 /* Reset de márgenes y relleno */
 body, margin, padding {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
 }
 html, body {
-    height: 100%;
-    margin: 0;
+    height: 100%; /* Asegura que html y body ocupen el 100% de la altura */
+    margin: 0; /* Elimina el margen por defecto */
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox para estructurar el contenido */
+    flex-direction: column; /* Establece la dirección de los elementos hijos en columna */
 }
 
 /* Estilo del encabezado */
 header {
     background-color: #1c335b; /* Color de fondo de la barra de navegación */
-    color: #fff; /* Color del texto */
-    position: relative; /* Necesario para posicionar el menú hamburguesa */
+    color: #fff; /* Color del texto en el encabezado */
+    position: relative; /* Permite posicionar el menú hamburguesa relativo a este elemento */
 }
 
 /* Estilo de la barra de navegación */
 .navbar {
-    display: flex;
+    display: flex; /* Utiliza flexbox para alinear los elementos de la barra */
     justify-content: flex-start; /* Alinea el contenido (imagen) a la izquierda */
     align-items: center; /* Centra el contenido verticalmente */
-    height: 80px; /* Aumenta la altura de la barra de navegación */
-    padding: 0 30px; /* Aumenta el espaciado a los lados */
+    height: 80px; /* Establece la altura de la barra de navegación */
+    padding: 0 30px; /* Espaciado a los lados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo de la barra */
-    position: relative; /* Necesario para posicionar el ícono de menú hamburguesa */
+    position: relative; /* Permite posicionar el ícono de menú hamburguesa */
 }
 
 /* Ajustes generales para el logo */
 .navbar-logo {
     height: auto; /* Mantiene la proporción original de la imagen */
-    max-height: 60px; /* Define una altura máxima para evitar que crezca demasiado */
+    max-height: 60px; /* Establece una altura máxima para el logo */
     width: auto; /* Ajusta el ancho automáticamente en función de la altura */
 }
 
 /* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
     .navbar-logo {
-        max-height: 40px; /* Ajusta la altura del logo en pantallas pequeñas */
+        max-height: 40px; /* Reduce la altura del logo en pantallas pequeñas */
         width: auto; /* Mantiene la proporción correcta */
     }
 }
 
 /* Estilo para el icono de menú hamburguesa */
 .menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    right: 30px; /* Ajusta el espacio desde el borde derecho */
+    font-size: 24px; /* Tamaño de fuente del icono */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    color: white; /* Color del icono */
+    position: absolute; /* Posiciona el icono dentro de la barra */
+    right: 30px; /* Espacio desde el borde derecho */
 }
 
 /* Ocultar el menú por defecto */
 .menu {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 80px; /* Ajusta el espacio desde el fondo del encabezado */
-    background-color: #1c335b;
+    display: none; /* Oculta el menú inicialmente */
+    position: absolute; /* Posiciona el menú de manera absoluta */
+    right: 0; /* Alinea el menú a la derecha */
+    top: 80px; /* Posiciona el menú debajo de la barra de navegación */
+    background-color: #1c335b; /* Color de fondo del menú */
     width: 200px; /* Ancho del menú */
 }
 
 /* Mostrar el menú cuando se active */
 .menu.active {
-    display: block;
+    display: block; /* Muestra el menú cuando se activa */
 }
 
 /* Estilo de los enlaces en el menú */
 .menu a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-bottom: 1px solid #fff; /* Añade una línea separadora */
+    display: block; /* Hace que los enlaces se comporten como bloques */
+    color: white; /* Color del texto de los enlaces */
+    padding: 15px; /* Espaciado alrededor del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-bottom: 1px solid #fff; /* Añade una línea separadora entre enlaces */
 }
 
 .menu a:hover {
-    background-color: #375688; /* Cambia el color al pasar el cursor */
+    background-color: #375688; /* Cambia el color de fondo al pasar el cursor */
 }
 
 /* IMAGENES PC */
@@ -108,18 +108,18 @@ header {
 /* Contenedor para las imágenes */
 .img-container {
     display: flex; /* Utiliza flexbox para alinear las imágenes horizontalmente */
-    justify-content: center; /* Centra las imágenes horizontalmente en el contenedor */
+    justify-content: center; /* Centra las imágenes en el contenedor */
     gap: 40px; /* Espacio entre las imágenes */
     padding: 20px; /* Espacio alrededor del contenedor */
 }
 
 /* Estilo para cada imagen */
 .img-item {
-    width: 700px; /* Tamaño fijo para el ancho de las imágenes */
-    height: 400px; /* Tamaño fijo para la altura de las imágenes */
-    object-fit: cover; /* Ajusta las imágenes para que cubran el área sin distorsionar */
-    border-radius: var(--cornerRad); /* Aplica el radio de esquina definido en las variables */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera a las imágenes */
+    width: 700px; /* Ancho fijo para las imágenes */
+    height: 400px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta las imágenes para cubrir el área sin distorsionar */
+    border-radius: var(--cornerRad); /* Aplica el radio de esquina definido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera a las imágenes */
     margin-top: 90px; /* Desplaza las imágenes hacia abajo */
 }
 
@@ -136,39 +136,39 @@ header {
     /* Ajustes para cada imagen en dispositivos móviles */
     .img-item {
         width: 100%; /* Hace que las imágenes ocupen el ancho completo del contenedor */
-        height: auto; /* Ajusta la altura de las imágenes automáticamente */
+        height: auto; /* Ajusta la altura automáticamente */
         margin-top: 0; /* Elimina el margen superior */
     }
 }
 
 /* ESTILO PARA PIE DE PAGINA */
 footer {
-    background-color: #1c335b;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
+    background-color: #1c335b; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto en el pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 15px; /* Espaciado alrededor del contenido del pie */
+    width: 100%; /* Asegura que el pie ocupe el ancho completo */
     box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
 }
 
 /* Asegura que el footer esté al final de la página */
 body > footer {
-    margin-top: auto;
+    margin-top: auto; /* Coloca el footer al final del body */
 }
 
 .footer-content p {
-    margin: 0;
-    font-size: 14px;
+    margin: 0; /* Elimina el margen por defecto de los párrafos */
+    font-size: 14px; /* Tamaño de fuente para los párrafos */
 }
 
 /* Estilos específicos para pantallas pequeñas */
 @media (max-width: 768px) {
     footer {
-        padding: 10px; /* Reducir el padding en pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding en pantallas más pequeñas */
     }
 
     .footer-content p {
-        font-size: 12px; /* Reducir el tamaño de la fuente */
+        font-size: 12px; /* Reduce el tamaño de la fuente */
     }
 }
 
@@ -179,12 +179,12 @@ body > footer {
     }
 
     .menu {
-        width: 250px; /* Puedes ajustar el ancho del menú si es necesario */
+        width: 250px; /* Ajusta el ancho del menú si es necesario */
         top: 60px; /* Ajusta la posición del menú si es necesario */
     }
 
     .img-container {
-        flex-direction: row; /* Mantén la alineación horizontal de las imágenes */
+        flex-direction: row; /* Mantiene la alineación horizontal de las imágenes */
         gap: 30px; /* Ajusta el espacio entre las imágenes */
         padding: 15px; /* Ajusta el espacio alrededor del contenedor */
     }
@@ -198,6 +198,7 @@ body > footer {
         padding: 10px 20px; /* Ajusta el padding si es necesario */
     }
 }
+
 
   
   

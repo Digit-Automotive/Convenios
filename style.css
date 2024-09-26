@@ -1,137 +1,132 @@
 /* Reset general para padding y margin */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
 }
 
 /* Estilos básicos para el body */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 100vh;
-    font-family: Hack, monospace;
-    background-color: #1c335b;
+    display: flex; /* Utiliza flexbox para el layout */
+    flex-direction: column; /* Orienta los elementos hijos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    position: relative; /* Permite posicionar elementos hijos de forma relativa */
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    font-family: Hack, monospace; /* Define la fuente utilizada */
+    background-color: #1c335b; /* Establece un color de fondo oscuro */
     text-align: center; /* Alinea el texto al centro */
 }
 
 /* Estilos para los divs */
 div {
-    color: #ffffff;
-    text-align: center;
+    color: #ffffff; /* Define el color del texto dentro de los divs */
+    text-align: center; /* Alinea el texto dentro de los divs al centro */
 }
 
 /* Estilos para los párrafos */
 p {
-    margin: 16px;
-    font-size: 96px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all 1s ease-in-out;
-    position: relative;
+    margin: 16px; /* Establece un margen alrededor de los párrafos */
+    font-size: 96px; /* Define el tamaño de la fuente de los párrafos */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: 600; /* Define un grosor de fuente semi-negrita */
+    transition: all 1s ease-in-out; /* Agrega una transición suave para todos los cambios de estilo */
+    position: relative; /* Permite la utilización de posicionamiento absoluto en elementos hijos */
 }
 
 /* Efecto hover para los párrafos */
 p::before {
-    content: attr(data-item);
-    transition: all 1s ease-in-out;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
+    content: attr(data-item); /* Utiliza el valor del atributo 'data-item' como contenido */
+    transition: all 1s ease-in-out; /* Agrega una transición suave */
+    color: #ffffff; /* Define el color del texto en blanco */
+    position: absolute; /* Posiciona el contenido de manera absoluta */
+    top: 0; bottom: 0; left: 0; right: 0; /* Abarca todo el área del párrafo */
+    width: 0; /* Inicialmente el ancho es 0 */
+    overflow: hidden; /* Oculta el contenido desbordado */
 }
 
 /* Efecto hover para los párrafos */
 p:hover::before {
-    width: 100%;
+    width: 100%; /* Expande el ancho al 100% al hacer hover */
 }
 
 /* Estilos para el menú de navegación */
 nav {
-    margin: 25px;
-    background: #1c335b;
-    padding: 16px;
+    margin: 25px; /* Establece un margen alrededor del menú */
+    background: #1c335b; /* Establece un fondo igual al del body */
+    padding: 16px; /* Agrega un padding interno al menú */
 }
 
 /* Estilos para los elementos del menú */
 .menuItems {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
-    justify-content: center; /* Centra los elementos */
+    list-style: none; /* Elimina los estilos predeterminados de las listas */
+    display: flex; /* Utiliza flexbox para los elementos de la lista */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra los elementos de la lista */
 }
 
 /* Estilos para los elementos del menú */
 .menuItems li {
-    margin: 5px; /* Reduce el margen para mejor adaptabilidad */
+    margin: 5px; /* Establece un margen alrededor de los elementos de la lista */
 }
 
 /* Estilos para los enlaces en el menú */
 .menuItems a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 400;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    font-size: 24px; /* Define el tamaño de la fuente para los enlaces */
+    font-weight: 400; /* Define un grosor de fuente normal */
+    transition: all 0.5s ease-in-out; /* Agrega una transición suave */
+    position: relative; /* Permite la utilización de posicionamiento absoluto en pseudo-elementos */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
 }
 
 /* Efecto hover para los enlaces del menú */
 .menuItems a::before {
-    content: attr(data-item);
-    transition: 0.5s;
-    color: #ffffff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
+    content: attr(data-item); /* Utiliza el valor del atributo 'data-item' como contenido */
+    transition: 0.5s; /* Agrega una transición suave */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    position: absolute; /* Posiciona el contenido de manera absoluta */
+    top: 0; bottom: 0; left: 0; right: 0; /* Abarca todo el área del enlace */
+    width: 0; /* Inicialmente el ancho es 0 */
+    overflow: hidden; /* Oculta el contenido desbordado */
 }
 
+/* Efecto hover para los enlaces del menú */
 .menuItems a:hover::before {
-    width: 100%;
-    transition: all 0.5s ease-in-out;
+    width: 100%; /* Expande el ancho al 100% al hacer hover */
+    transition: all 0.5s ease-in-out; /* Agrega una transición suave */
 }
 
 /* Estilos para el footer */
 footer {
-    position: absolute;
-    font-size: 16px;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    background-color: #1c335b;
-    color: #ffffff;
-    text-align: center;
+    position: absolute; /* Posiciona el footer de manera absoluta */
+    font-size: 16px; /* Define el tamaño de la fuente para el footer */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    width: 100%; /* Asegura que el footer ocupe el 100% del ancho */
+    height: 60px; /* Define la altura del footer */
+    line-height: 60px; /* Alinea el texto verticalmente en el centro */
+    background-color: #1c335b; /* Establece un fondo igual al del body */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    text-align: center; /* Alinea el texto al centro */
 }
 
 /* Estilos para los enlaces en el footer */
 footer a {
-    text-decoration: none;
-    color: inherit;
-    border-bottom: 1px solid;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto del footer */
+    border-bottom: 1px solid; /* Agrega una línea inferior a los enlaces */
 }
 
 footer a:hover {
-    border-bottom: 1px transparent;
+    border-bottom: 1px transparent; /* Cambia a borde transparente al hacer hover */
 }
 
 /* Asegura que las imágenes se ajusten a la pantalla */
 img {
-    max-width: auto;
-    height: auto;
+    max-width: auto; /* Permite que las imágenes se escalen automáticamente */
+    height: auto; /* Mantiene la proporción de las imágenes */
     display: block; /* Elimina el espacio en blanco debajo de la imagen */
 }
 
@@ -148,6 +143,7 @@ img {
     img {
         max-width: 90%; /* Reduce el ancho máximo de las imágenes */
     }
+
     footer {
         font-size: 12px; /* Ajusta el tamaño del texto en el footer para pantallas pequeñas */
         height: 50px; /* Ajusta la altura del footer si es necesario */
@@ -205,7 +201,6 @@ img {
 
     footer {
         font-size: 14px; /* Ajusta el tamaño del texto en el footer para orientación horizontal */
-        height: 55px; /* Ajusta la altura del footer si es necesario */
-        line-height: 55px; /* Ajusta la altura de la línea para el nuevo tamaño de fuente */
+        height: 55px; /* Ajusta la altura del footer */
     }
 }

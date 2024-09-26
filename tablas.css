@@ -1,48 +1,51 @@
 table {
-  width: 80%;
-  margin: 3% auto;
-  border-collapse: collapse;
+  width: 80%; /* La tabla ocupa el 80% del ancho del contenedor padre */
+  margin: 3% auto; /* Centra la tabla horizontalmente con un margen superior e inferior del 3% */
+  border-collapse: collapse; /* Colapsa los bordes adyacentes de las celdas para evitar espacios duplicados */
 }
+
 td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+  border: 1px solid #ddd; /* Aplica un borde gris claro a las celdas y encabezados */
+  padding: 8px; /* Añade un espacio interior de 8px en las celdas */
+  text-align: center; /* Centra el texto dentro de las celdas */
 }
 th {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; /* Establece un fondo gris claro para los encabezados */
 }
+
 .center {
-  text-align: center;
+  text-align: center; /* Clase para centrar el texto en los elementos */
 }
 
 @media (max-width: 600px) {
   table {
-      width: 100%;
-      display: block;
-      border: none; /* Eliminar el borde alrededor de la tabla */
-      overflow: hidden; /* Evita que se desborde */
+      width: 100%; /* La tabla ocupa el 100% del ancho en pantallas pequeñas */
+      display: block; /* Convierte la tabla en un bloque para permitir el uso de scroll */
+      border: none; /* Elimina el borde alrededor de la tabla */
+      overflow: hidden; /* Evita que el contenido desborde */
   }
   thead {
-      display: none; /* Oculta los encabezados en la vista móvil */
+      display: none; /* Oculta la fila de encabezados en la vista móvil */
   }
   tr {
-      display: block; /* Cada fila como bloque */
-      margin-bottom: 10px; /* Espaciado entre filas */
-      background-color: #fff; /* Fondo blanco para las filas */
-      border: 1px solid #ddd; /* Borde alrededor de cada fila */
-      border-radius: 5px; /* Esquinas redondeadas */
-      overflow: hidden; /* Evita el desbordamiento */
+      display: block; /* Cada fila se convierte en un bloque para facilitar el diseño */
+      margin-bottom: 10px; /* Añade un margen inferior entre las filas */
+      background-color: #fff; /* Establece un fondo blanco para cada fila */
+      border: 1px solid #ddd; /* Añade un borde alrededor de cada fila */
+      border-radius: 5px; /* Redondea las esquinas de las filas */
+      overflow: hidden; /* Evita el desbordamiento de contenido */
   }
   td {
-      display: flex; /* Flex para alinear el contenido */
-      justify-content: space-between; /* Espacio entre etiquetas y valores */
-      padding: 12px 5px;
-      border: none; /* Sin bordes en las celdas móviles */
+      display: flex; /* Usa flexbox para alinear los elementos dentro de la celda */
+      justify-content: space-between; /* Espacia los elementos dentro de la celda */
+      padding: 12px 5px; /* Añade un padding superior e inferior de 12px y lateral de 5px */
+      border: none; /* Elimina los bordes en las celdas en la vista móvil */
   }
   td::before {
-      content: attr(data-label); /* Usa el atributo data-label para mostrar la etiqueta */
-      flex-basis: 40%; /* Espacio para la etiqueta */
-      font-weight: bold; /* Resaltar etiquetas */
-      color: #555; /* Color de texto más oscuro */
+      content: attr(data-label); /* Usa el atributo 'data-label' para mostrar la etiqueta de la celda */
+      flex-basis: 40%; /* Establece un ancho base del 40% para la etiqueta */
+      font-weight: bold; /* Resalta las etiquetas con un texto en negrita */
+      color: #555; /* Establece un color de texto más oscuro para las etiquetas */
   }
 }
+
